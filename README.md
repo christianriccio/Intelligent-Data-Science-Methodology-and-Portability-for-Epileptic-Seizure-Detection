@@ -8,3 +8,13 @@ Epilepsy is a prevalent neurological disorder characterized by sudden, irregular
 # Introduction 
 
 Affecting approximately 50 million individuals globally, epilepsy imposes significant challenges due to its unpredictable seizure episodes. Despite advancements in medical treatment, a substantial fraction of patients remains unresponsive to conventional therapies, highlighting the need for innovative detection and management strategies. Our research leverages long-term EEG monitoring data to develop an IDS system that addresses these challenges by facilitating accurate, reliable seizure detection and offering insights into patient-specific seizure dynamics.
+
+
+## License 
+This project is licensed under the 
+## Acknowledgments 
+
+- University of Naples Federico II
+- C.I.R.A. (Centro Italiano Ricerche Aerospaziali) 
+- I.R.C.C.S. NEUROMED (Istituto Neurologico Mediterraneo)
+- Project support: Prof. Roberta Siciliano, Prof. Giuseppe Longo, Prof. Michele Staiano. Ing. Luigi Pavone, Dr. Gaetano Zazzaro
