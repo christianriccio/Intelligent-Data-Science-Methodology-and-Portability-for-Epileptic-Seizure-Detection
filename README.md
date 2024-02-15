@@ -13,17 +13,19 @@ Affecting approximately 50 million individuals globally, epilepsy imposes signif
 ## Prerequisites 
 
 The whole analysis process of the project has been carried out in Python (3.8+). In the following are reported some of the libraries employed: 
-- Scikit-learn
-- Numpy
-- Pandas
-- Seaborn
-- Pickle
-- Sys
-- Os
-- Collections
-- Xgb
-- Tensorflow
-- Keras
+- `Scikit-learn`
+- `Numpy`
+- `Pandas`
+- `Seaborn`
+- `Pickle`
+- `Sys`
+- `Os`
+- `Collections`
+- `Xgb`
+- `Tensorflow`
+- `Keras`
+## Access to the code
+The code has been hosted on a colab notebook accesible art the following [link] (https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing)
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
