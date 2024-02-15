@@ -9,8 +9,21 @@ Epilepsy is a prevalent neurological disorder characterized by sudden, irregular
 
 Affecting approximately 50 million individuals globally, epilepsy imposes significant challenges due to its unpredictable seizure episodes. Despite advancements in medical treatment, a substantial fraction of patients remains unresponsive to conventional therapies, highlighting the need for innovative detection and management strategies. Our research leverages long-term EEG monitoring data to develop an IDS system that addresses these challenges by facilitating accurate, reliable seizure detection and offering insights into patient-specific seizure dynamics.
 # Getting Started
+
 ## Prerequisites 
-The whole project 
+
+The whole analysis process of the project has been carried out in Python (3.8+). In the following are reported some of the libraries employed: 
+- Scikit-learn
+- Numpy
+- Pandas
+- Seaborn
+- Pickle
+- Sys
+- Os
+- Collections
+- Xgb
+- Tensorflow
+- Keras
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
