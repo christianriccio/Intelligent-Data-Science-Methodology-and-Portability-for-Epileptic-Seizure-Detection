@@ -8,6 +8,11 @@ Epilepsy is a prevalent neurological disorder characterized by sudden, irregular
 # Introduction 
 
 Affecting approximately 50 million individuals globally, epilepsy imposes significant challenges due to its unpredictable seizure episodes. Despite advancements in medical treatment, a substantial fraction of patients remains unresponsive to conventional therapies, highlighting the need for innovative detection and management strategies. Our research leverages long-term EEG monitoring data to develop an IDS system that addresses these challenges by facilitating accurate, reliable seizure detection and offering insights into patient-specific seizure dynamics.
+# Repository Structure 
+- `/notebook`: contains the .zip version of the colab notebook (linked also after) that hosts the whole source code of data pre-processing, analysis and modelling. 
+- `/datasets`: contains the datasets used for the purpose of the analysis
+- `/snippets`: contains sub-folders labelled as: pre-processing.... each one of them containing python scripts extracted from the notebook.
+
 # Getting Started
 
 ## Prerequisites 
