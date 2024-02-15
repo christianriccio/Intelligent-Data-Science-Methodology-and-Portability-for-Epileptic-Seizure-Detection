@@ -25,7 +25,7 @@ The whole analysis process of the project has been carried out in Python (3.8+).
 - `Tensorflow`
 - `Keras`
 ## Access to the code
-The code has been hosted on a colab notebook accesible art the following [link](https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing)
+The code has been hosted on a colab notebook accesible art the following [link](https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing).
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
