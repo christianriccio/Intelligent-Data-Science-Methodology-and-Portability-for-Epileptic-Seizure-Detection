@@ -42,7 +42,7 @@ EEGs, being raw data, have a very complex nature, typically dealing with non-sta
 - frequency-domain
 - time-frequency domain
 
-At CIRA a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks),which uses the Sliding Window (SlW) paradigm for the calculation of characteristic features of the time series.
+At CIRA a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks), which uses the Sliding Window (SlW) paradigm for the calculation of characteristic features of the time series.
 In the end, with the help of the Training-Builder tool a data set has been built. 
 It consists of: 
 - 491626 observations
