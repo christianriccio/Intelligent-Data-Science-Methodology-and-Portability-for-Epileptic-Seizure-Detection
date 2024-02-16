@@ -12,6 +12,7 @@ Affecting approximately 50 million individuals globally, epilepsy imposes signif
 - **`/notebook`**: contains the .zip version of the colab notebook (linked also after) that hosts the whole source code of data pre-processing, analysis and modelling. 
 - **`/datasets`**: contains the datasets used for the purpose of the analysis
 - **`/snippets`**: contains sub-folders labelled as: pre-processing.... each one of them containing python scripts extracted from the notebook.
+- **`/results`: ...
 
 # Getting Started
 
