@@ -8,6 +8,7 @@ Epilepsy is a prevalent neurological disorder characterized by sudden, irregular
 # Introduction 
 
 Affecting approximately 50 million individuals globally, epilepsy imposes significant challenges due to its unpredictable seizure episodes. Despite advancements in medical treatment, a substantial fraction of patients remains unresponsive to conventional therapies, highlighting the need for innovative detection and management strategies. Our research leverages long-term EEG monitoring data to develop an IDS system that addresses these challenges by facilitating accurate, reliable seizure detection and offering insights into patient-specific seizure dynamics.
+
 # Repository Structure 
 - **`/notebook`**: contains the .zip version of the colab notebook (linked also after) that hosts the whole source code of data pre-processing, analysis and modelling. 
 - **`/datasets`**: contains the datasets used for the purpose of the analysis
@@ -31,7 +32,20 @@ The whole analysis process of the project has been carried out in Python (3.8+).
 - `Tensorflow`
 - `Keras`
 ## Access to the code
-The code has been hosted on a colab notebook accesible art the following [link](https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing).
+The code is hosted on a colab notebook accesible at the following [link](https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing).
+
+# Data Description
+The data used in this research project were made available to the IRCCS Neuromed center at C.I.R.A. The patient database in question is widely used and well known in the industry. The database contains intracranial EEG recordings of 21 patients suffering from drug- resistant seizures. They are the result of the monitoring activity conducted at the *Epilepsy Center of the University Hospital of Freiburg, Germany*.
+However, the database held by the C.I.R.A. it does not have patient number 12 which was lost, so all the study conducted in this project is to be referred to the remaining 20 patients.
+EEGs, being raw data, have a very complex nature, typically dealing with non-stationary time series signals. Generally, features are calculated from these signals with the aim of greatly impacting the final crisis detection process in the starting signal. Therefore,  the extraction of information from them passes through the calculation of features through the analysis of the signal in specific domains:
+- time-domain
+- frequency-domain
+- time-frequency domain
+
+At C.I.R.A. a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks)
+
+
+
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
