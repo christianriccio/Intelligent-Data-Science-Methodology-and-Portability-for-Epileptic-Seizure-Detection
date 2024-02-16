@@ -53,7 +53,7 @@ By giving a sampling ratio of 10%, the final dataset (`/datasets/new_file.txt`, 
 - 49162 observations
 - 868 columns
 
-For an in-deepth understanding of the data, and data pre-processing, refers to the colab as well as the paper linked ahead. 
+For an in-deepth understanding of the data, as well as data pre-processing, refers to both the colab and the paper linked ahead. 
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
