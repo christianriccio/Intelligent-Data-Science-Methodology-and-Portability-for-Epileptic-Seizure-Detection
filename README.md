@@ -13,7 +13,7 @@ Affecting approximately 50 million individuals globally, epilepsy imposes signif
 - **`/notebook`**: contains the .zip version of the colab notebook (linked also after) that hosts the whole source code of data pre-processing, analysis and modelling. 
 - **`/datasets`**: contains the datasets used for the purpose of the analysis
 - **`/snippets`**: contains sub-folders labelled as: pre-processing.... each one of them containing python scripts extracted from the notebook.
-- **`/results`: ...
+- **`/results`:** ...
 
 # Getting Started
 
@@ -48,7 +48,7 @@ It consists of:
 - 491626 observations
 - 874 variables
 
-However, the dimension of such database creates a problem, due to the limited computational resources of Colab or a physical machine. In order to able to deal with such dimension, a python function (`/snippets/stratified_sampling.py`) has been written. In particular, given the data frame as input, the function outputs a random under-sampling of the same while also preserving the same starting imbalance ratio between the two classes of the target variable. 
+However, the dimension of such database creates a problem, due to the limited computational resources of Colab or a physical machine. In order to able to deal with such dimension, a [python function](`/snippets/stratified_sampling.py`) has been written. In particular, given the data frame as input, the function outputs a random under-sampling of the same while also preserving the same starting imbalance ratio between the two classes of the target variable. 
 
 For an in-deep understanding of the data, and data pre-processing and understanding, refers to the colab as well as the paper linked ahead. 
 ## Research paper
