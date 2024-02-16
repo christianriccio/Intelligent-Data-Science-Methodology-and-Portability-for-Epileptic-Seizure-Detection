@@ -35,21 +35,21 @@ The whole analysis process of the project has been carried out in Python (3.8+).
 The code is hosted on a colab notebook accesible at the following [link](https://colab.research.google.com/drive/1oEfeDklnTxF9ZrC_MZmXZQo1ZEbIje-E?usp=sharing).
 
 # Data Description
-The data used in this research project were made available to the IRCCS Neuromed center at C.I.R.A. The patient database in question is widely used and well known in the industry. The database contains intracranial EEG recordings of 21 patients suffering from drug- resistant seizures. They are the result of the monitoring activity conducted at the *Epilepsy Center of the University Hospital of Freiburg, Germany*.
-However, the database held by the C.I.R.A. it does not have patient number 12 which was lost, so all the study conducted in this project is to be referred to the remaining 20 patients.
+The data used in this research project were made available to the IRCCS Neuromed center at CIRA(Italian Aerospace Research Centre). The patient database in question is widely used and well known in the industry. The database contains intracranial EEG recordings of 21 patients suffering from drug- resistant seizures. They are the result of the monitoring activity conducted at the *Epilepsy Center of the University Hospital of Freiburg, Germany*.
+However, the database held by the CIRA it does not have patient number 12 which was lost, so all the study conducted in this project is to be referred to the remaining 20 patients.
 EEGs, being raw data, have a very complex nature, typically dealing with non-stationary time series signals. Generally, features are calculated from these signals with the aim of greatly impacting the final crisis detection process in the starting signal. Therefore,  the extraction of information from them passes through the calculation of features through the analysis of the signal in specific domains:
 - time-domain
 - frequency-domain
 - time-frequency domain
 
-At C.I.R.A. a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks),which uses the Sliding Window (SlW) paradigm for the calculation of characteristic features of the time series.
+At CIRA a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks),which uses the Sliding Window (SlW) paradigm for the calculation of characteristic features of the time series.
 In the end, with the help of the Training-Builder tool a data set has been built. 
 It consists of: 
 - 491626 observations
 - 874 variables
 
 However, the dimension of such database creates a problem, due to the limited computational resources of Colab or a physical machine. In order to able to deal with such dimension, a python function (`/snippets/stratified_sampling.py`) has been written. In particular, given the data frame as input, the function outputs a random under-sampling of the same while also preserving the same starting imbalance ratio between the two classes of the target variable. 
-By giving a sampling ratio of 10%, the final dataset (`/datasets/new_file.7z`) resulted in a dimension of:
+By giving a sampling ratio of 10%, the final dataset (`/datasets/new_file.txt`, because of GitHub file dimension's limit the dataset is hosted on Google Drive at the link in the .txt file) resulted in a dimension of:
 - 49162 observations
 - 868 columns
 
