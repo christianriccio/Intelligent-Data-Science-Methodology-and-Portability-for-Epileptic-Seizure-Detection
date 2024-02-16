@@ -49,8 +49,11 @@ It consists of:
 - 874 variables
 
 However, the dimension of such database creates a problem, due to the limited computational resources of Colab or a physical machine. In order to able to deal with such dimension, a python function (`/snippets/stratified_sampling.py`) has been written. In particular, given the data frame as input, the function outputs a random under-sampling of the same while also preserving the same starting imbalance ratio between the two classes of the target variable. 
+By giving a sampling ratio of 10%, the final dataset resulted in a dimension of:
+- 49162 observations
+- 868 columns
 
-For an in-deep understanding of the data, and data pre-processing and understanding, refers to the colab as well as the paper linked ahead. 
+For an in-deepth understanding of the data, and data pre-processing, refers to the colab as well as the paper linked ahead. 
 ## Research paper
 The research paper is accessible at the following link: 
 ## Acknowledgments 
