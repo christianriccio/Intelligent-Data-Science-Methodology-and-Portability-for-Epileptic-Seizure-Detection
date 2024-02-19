@@ -44,7 +44,7 @@ EEGs, being raw data, have a very complex nature, typically dealing with non-sta
 At CIRA a time series processing framework has been developed, called Training Builder (TB) [paper1](https://www.researchgate.net/publication/332037382_A_Feature_Extraction_Framework_for_Time_Series_Analysis_An_Application_for_EEG_Signal_Processing_for_Epileptic_Seizures_Detection), [paper2](https://www.researchgate.net/publication/335910183_From_Electroencephalogram_to_Epileptic_Seizures_Detection_by_Using_Artificial_Neural_Networks), which uses the Sliding Window (SlW) paradigm for the calculation of characteristic features of the time series.
 In the end, with the help of the Training-Builder tool a data set has been built. 
 It consists of: 
-- 491626 observations
+- 491626 observations (`datasets/starting_dataset.txt`, link to the dataset hosted on Google Drive)
 - 874 variables
 
 However, the dimension of such database creates a problem, due to the limited computational resources of Colab or a physical machine. In order to able to deal with such dimension, a python function (`/snippets/stratified_sampling.py`) has been written. In particular, given the data frame as input, the function outputs a random under-sampling of the same while also preserving the same starting imbalance ratio between the two classes of the target variable. 
