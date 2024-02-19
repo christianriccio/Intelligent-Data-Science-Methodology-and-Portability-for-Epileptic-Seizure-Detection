@@ -53,6 +53,22 @@ By giving a sampling ratio of 10%, the final dataset (`/datasets/new_file.txt`, 
 - 49162 observations
 - 868 columns
 
+# Data Pre-processing
+
+Before proceeding with analysis and modelling, data has been pre-processed (acting on the sampled dataset). In particular:
+
+- columns with zero values have been deleted
+- Deletion of the following columns, either for domain relevance and poor variability in thei range of values: `['E1B70HCP1','E2B70HCP1','E3B70HCP1','E4B70HCP1','E5B70HCP1','E6B70HCP1','E1B40HCP1','E2B40HCP1','E3B40HCP1','E4B40HCP1','E5B40HCP1','E6B40HCP1',
+'E1B30HCP1','E2B30HCP1','E3B30HCP1','E4B30HCP1','E5B30HCP1','E6B30HCP1','E1B21HCP1','E2B21HCP1','E3B21HCP1','E4B21HCP1','E5B21HCP1','E6B21HCP1',
+'E1B13HCP1','E2B13HCP1','E3B13HCP1','E4B13HCP1','E5B13HCP1','E6B13HCP1','E1B8HCP1','E2B8HCP1','E3B8HCP1','E4B8HCP1','E5B8HCP1','E6B8HCP1']`
+- Data has been undersampled, the majority class in partcular has been undersampled, to prooced with feature selection.
+
+## Feature selection 
+
+Two techniques has been involved:
+- select KBest: The SelectKBest method allows me to select variables according to a scoring method associated with each of them. Specifically, the score can be obtained using a feature selection method; in my specific case, I use the 'mutual_info_classifier' method. This method is based on information theory, estimating the informational content that a predictor has with respect to the target variable. Mutual information between two variables is a measure of dependence. High informational content indicates high dependence between the variables.
+- VIF (Variance Infaltion Factor): is a feature selection process used to identify and remove multicollinearity among predictor variables in regression analysis. It measures how much the variance of an estimated regression coefficient increases if predictors are correlated. Variables with high VIF values, indicating high multicollinearity, are typically removed from the model to improve its stability and interpretability. In `snippets/calculate_vif_.py`, there is the function to perform feature selction with VIF technique.
+
 For an in-deepth understanding of the data, as well as data pre-processing, refers to both the colab and the paper linked ahead. 
 ## Research paper
 The research paper is accessible at the following link: 
